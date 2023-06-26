@@ -1,4 +1,4 @@
-# CANopen FD Master Protocol Stack
+# CANopen FD Bootloader Protocol Stack
 
 This project provides the [documentation](https://microcontrol-germany.github.io/canopen-bootloader/) for the
 MicroControl [CANopen FD Bootloader Protocol Stack](https://www.microcontrol.net/en/portfolio/protocol-stacks/canopen/canopen-bootloader/).
