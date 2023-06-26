@@ -1,0 +1,4 @@
+<map id="CpFifo_s" name="CpFifo_s">
+<area shape="rect" id="node1" title="Administration variables of a CAN message FIFO." alt="" coords="6,248,107,369"/>
+<area shape="rect" id="node2" href="$structCpCanMsg__s.html" title="CAN message structure." alt="" coords="5,5,108,185"/>
+</map>
