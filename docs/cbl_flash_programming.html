@@ -20,7 +20,7 @@
 <script type="text/javascript" src="dynsections.js"></script>
 <script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
 <script type="text/javascript">
-   //DoxygenAwesomeDarkModeToggle.init()
+   DoxygenAwesomeDarkModeToggle.init()
 </script>
 <link href="navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="resize.js"></script>
@@ -125,11 +125,7 @@ $(document).ready(function(){initNavTree('cbl_flash_programming.html',''); initR
 </td></tr>
 </table>
 </div><p>The next figure gives an overview of the involved CANopen objects during program download.</p>
-<div class="image">
-<img src="bootloader_program_download.png" alt=""/>
-<div class="caption">
-Program download</div></div>
-    <p>The following global variables are used inside the callback functions.</p>
+<div class="dyncontent"> <img src="bootloader_program_download.png" alt="" class="inline" title="Program download"/>     </div><p>The following global variables are used inside the callback functions.</p>
 <div class="function" style="width:90%"> <table class="function">
 <tr class="head">
 <td class="desc" style="width:25%">Variable </td><td class="desc" style="width:20%">Access </td><td class="desc"><p class="starttd">Description </p>
@@ -199,11 +195,7 @@ Program download</div></div>
 <div class="ttc" id="amc__flash_8h_html_acb4c366200ae6d46cf8dc460b9acee24"><div class="ttname"><a href="mc__flash_8h.html#acb4c366200ae6d46cf8dc460b9acee24">McFlashErase</a></div><div class="ttdeci">Status_tv McFlashErase(uint32_t ulFlashAddrV, uint32_t ulSizeV)</div><div class="ttdoc">Erase page of selected address.</div></div>
 <div class="ttc" id="amc__iap_8h_html_a8c6d1fa8f0cf30262b5e33341c65f271"><div class="ttname"><a href="mc__iap_8h.html#a8c6d1fa8f0cf30262b5e33341c65f271">McIapAppSizeLimit</a></div><div class="ttdeci">uint32_t McIapAppSizeLimit(void)</div></div>
 </div><!-- fragment --><p> The following flowchart shows the interaction upon writing the Erase command or a Manufacturer-specific command to index 1F51<sub>h</sub> inside the object dictionary.</p>
-<div class="image">
-<img src="bootloader_erase_flash.png" alt=""/>
-<div class="caption">
-Program erase</div></div>
-    <h1>Store Data to Flash Memory</h1>
+<div class="dyncontent"> <img src="bootloader_erase_flash.png" alt="" class="inline" title="Program erase"/>     </div><h1>Store Data to Flash Memory</h1>
 <p>The function <a class="el" href="cbl__mgr_8h.html#a4beb62dc5018b06f558366cd4f418608">CblMgrBufferStore()</a> is called by the CANopen Bootloader after a certain amount of data has been copied to the internal RAM of the target system by the CANopen Download Tool. The following code has to be adopted to the target system.</p>
  <div class="fragment"><div class="line"><span class="keywordtype">void</span> <a class="code hl_function" href="cbl__mgr_8h.html#a4beb62dc5018b06f558366cd4f418608">CblMgrBufferStore</a>(uint8_t ubProgNumV, uint8_t * pubBufferV, uint16_t uwSizeV)</div>
 <div class="line">{</div>
@@ -315,7 +307,7 @@ Program erase</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer"><a href="https://www.microcontrol.net">&copy; MicroControl GmbH &amp; Co. KG</a> Mon Jun 26 2023 </li>
+    <li class="footer"><a href="https://www.microcontrol.net">&copy; MicroControl GmbH &amp; Co. KG</a> Fri Jul 28 2023 </li>
   </ul>
 </div>
 </body>

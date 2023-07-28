@@ -20,7 +20,7 @@
 <script type="text/javascript" src="dynsections.js"></script>
 <script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
 <script type="text/javascript">
-   //DoxygenAwesomeDarkModeToggle.init()
+   DoxygenAwesomeDarkModeToggle.init()
 </script>
 <link href="navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="resize.js"></script>
@@ -127,6 +127,12 @@ $(document).ready(function(){initNavTree('structCpCanMsg__s.html',''); initResiz
 Data Fields</h2></td></tr>
 <tr class="memitem:a34b06ff26b36e8dc803061c1964917b5"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCpCanMsg__s.html#a34b06ff26b36e8dc803061c1964917b5">ulIdentifier</a></td></tr>
 <tr class="separator:a34b06ff26b36e8dc803061c1964917b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cc8d5b31595b806e0459560178e36ac"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCpCanMsg__s.html#a4cc8d5b31595b806e0459560178e36ac">ubMsgDLC</a></td></tr>
+<tr class="separator:a4cc8d5b31595b806e0459560178e36ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf6c9f49d0a30c389c19ee62d8f37c3e"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCpCanMsg__s.html#aaf6c9f49d0a30c389c19ee62d8f37c3e">ubMsgCtrl</a></td></tr>
+<tr class="separator:aaf6c9f49d0a30c389c19ee62d8f37c3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d23e9f3d0f873e32d6713c9f7ffe816"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCpCanMsg__s.html#a0d23e9f3d0f873e32d6713c9f7ffe816">ulMsgUser</a></td></tr>
+<tr class="separator:a0d23e9f3d0f873e32d6713c9f7ffe816"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3bdb774abaa0cfd891b275d261326ff"><td class="memItemLeft" >union {</td></tr>
 <tr class="memitem:abe6f82a73e5cd875f8d9ef0ab6b57fd6"><td class="memItemLeft" >&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="structCpCanMsg__s.html#ac5d233965540e681a75c98dec52a89a7">aubByte</a> [<a class="el" href="canpie_8h.html#a9c68a7db1319edf3516467a07b0da16f">CP_DATA_SIZE</a>]</td></tr>
 <tr class="separator:abe6f82a73e5cd875f8d9ef0ab6b57fd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -136,12 +142,6 @@ Data Fields</h2></td></tr>
 <tr class="separator:a7acf717409b404203b0d68d48dc8e2c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3bdb774abaa0cfd891b275d261326ff"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCpCanMsg__s.html#ab3bdb774abaa0cfd891b275d261326ff">tuMsgData</a></td></tr>
 <tr class="separator:ab3bdb774abaa0cfd891b275d261326ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4cc8d5b31595b806e0459560178e36ac"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCpCanMsg__s.html#a4cc8d5b31595b806e0459560178e36ac">ubMsgDLC</a></td></tr>
-<tr class="separator:a4cc8d5b31595b806e0459560178e36ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf6c9f49d0a30c389c19ee62d8f37c3e"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCpCanMsg__s.html#aaf6c9f49d0a30c389c19ee62d8f37c3e">ubMsgCtrl</a></td></tr>
-<tr class="separator:aaf6c9f49d0a30c389c19ee62d8f37c3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d23e9f3d0f873e32d6713c9f7ffe816"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCpCanMsg__s.html#a0d23e9f3d0f873e32d6713c9f7ffe816">ulMsgUser</a></td></tr>
-<tr class="separator:a0d23e9f3d0f873e32d6713c9f7ffe816"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Field Documentation</h2>
 <a id="ac5d233965540e681a75c98dec52a89a7" name="ac5d233965540e681a75c98dec52a89a7"></a>
@@ -292,7 +292,7 @@ Bit 7: ISO CAN FD: value of ESI bit </li>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="structCpCanMsg__s.html">CpCanMsg_s</a></li>
-    <li class="footer"><a href="https://www.microcontrol.net">&copy; MicroControl GmbH &amp; Co. KG</a> Mon Jun 26 2023 </li>
+    <li class="footer"><a href="https://www.microcontrol.net">&copy; MicroControl GmbH &amp; Co. KG</a> Fri Jul 28 2023 </li>
   </ul>
 </div>
 </body>

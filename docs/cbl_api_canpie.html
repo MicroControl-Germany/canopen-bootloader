@@ -20,7 +20,7 @@
 <script type="text/javascript" src="dynsections.js"></script>
 <script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
 <script type="text/javascript">
-   //DoxygenAwesomeDarkModeToggle.init()
+   DoxygenAwesomeDarkModeToggle.init()
 </script>
 <link href="navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="resize.js"></script>
@@ -116,16 +116,16 @@ $(document).ready(function(){initNavTree('cbl_api_canpie.html',''); initResizabl
 <li>FD extended frame format (FEFF): message that contains up to 64 byte and is identified by 29 bits</li>
 </ul>
 <p>The Classical CAN protocol uses one bit-rate in the arbitration and the data phase. The transmission speed is limited to 1 Mbit/s. The payload (i.e. the data field) is limited to 8 byte. The following picture shows a Classic CAN frame with an 11-bit CAN-ID.</p>
-<div class="image">
+<div class="dyncontent"> <div class="image">
 <img src="can_frame_cbff.png" alt="" width="800px"/>
 <div class="caption">
 Classic CAN frame</div></div>
-<p>The CAN FD protocol allows payloads up to 64 byte. Additionally, it supports an optional second bit-rate for the data-phase (field BRS). The following picture shows a CAN FD frame with an 11-bit CAN-ID.</p>
-<div class="image">
+ </div><p>The CAN FD protocol allows payloads up to 64 byte. Additionally, it supports an optional second bit-rate for the data-phase (field BRS). The following picture shows a CAN FD frame with an 11-bit CAN-ID.</p>
+<div class="dyncontent"> <div class="image">
 <img src="can_frame_fbff.png" alt="" width="800px"/>
 <div class="caption">
 CAN FD frame</div></div>
-<h1>CANpie FD</h1>
+ </div><h1>CANpie FD</h1>
 <p>The CANopen Protocol Stack uses a well-defined API to the CAN (FD) interface. Thus can be adopted to any kind of CAN (FD) controller. The CANpie (FD) API is an open standardized software, developed by MicroControl, for reading and writing CAN (FD) messages. For further information visit <em><a href="https://canpie.github.io/index.html">CANpie (FD) Documentation</a></em> on GitHub.</p>
 <h1>CANpie FD files</h1>
 <div class="function" style="width:95%"> <table class="function">
@@ -155,7 +155,7 @@ CAN FD frame</div></div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="cbl_api_overview.html">API overview</a></li>
-    <li class="footer"><a href="https://www.microcontrol.net">&copy; MicroControl GmbH &amp; Co. KG</a> Mon Jun 26 2023 </li>
+    <li class="footer"><a href="https://www.microcontrol.net">&copy; MicroControl GmbH &amp; Co. KG</a> Fri Jul 28 2023 </li>
   </ul>
 </div>
 </body>
