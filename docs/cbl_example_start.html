@@ -14,7 +14,7 @@
 </script>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>CANopen (FD) Bootloader Protocol Stack | Initialisation Process</title>
+<title>CANopen (FD) Bootloader Protocol Stack | Initialization Process</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -42,7 +42,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectbrief">CANopen (FD) Bootloader Documentation</div>
-   <div id="projectnumber">Version 4.08.00</div>
+   <div id="projectnumber">Version 4.08.02</div>
   </td>
  </tr>
  </tbody>
@@ -105,21 +105,21 @@ $(document).ready(function(){initNavTree('cbl_example_start.html',''); initResiz
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title">Initialisation Process </div></div>
+  <div class="headertitle"><div class="title">Initialization Process </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md_pages_cbl_start_cbl_example_start"></a> The CANopen FD Bootloader stack is initialised with <a class="el" href="cbl__mgr_8h.html#a967ae5e24c6d4b2679ed83f0d8f2ebf0">CblMgrInit()</a>. This routine will setup the CAN controller and initialise all necessary services. Afterwards the stack can be started by calling the <a class="el" href="cbl__mgr_8h.html#a5e4e554e794bfa1342494e22ae4fcd14">CblMgrStart()</a> function.</p>
+<div class="textblock"><p><a class="anchor" id="md_pages_cbl_start_cbl_example_start"></a> The CANopen FD Bootloader stack is initialized with <a class="el" href="cbl__mgr_8h.html#a967ae5e24c6d4b2679ed83f0d8f2ebf0">CblMgrInit()</a>. This routine will setup the CAN controller and initialize all necessary services. Afterwards the stack can be started by calling the <a class="el" href="cbl__mgr_8h.html#a5e4e554e794bfa1342494e22ae4fcd14">CblMgrStart()</a> function.</p>
 <p>In summary three steps are necessary to run the CANopen FD Bootloader:</p><ul>
-<li>Initialise CANopen FD Bootloader stack: <a class="el" href="cbl__mgr_8h.html#a967ae5e24c6d4b2679ed83f0d8f2ebf0">CblMgrInit()</a></li>
+<li>Initialize CANopen FD Bootloader stack: <a class="el" href="cbl__mgr_8h.html#a967ae5e24c6d4b2679ed83f0d8f2ebf0">CblMgrInit()</a></li>
 <li>Start CANopen FD Bootloader Stack: <a class="el" href="cbl__mgr_8h.html#a5e4e554e794bfa1342494e22ae4fcd14">CblMgrStart()</a></li>
 <li>Call the timer event function cyclically: <a class="el" href="cbl__time_8h.html#acec3438c2171dbb154b56a31d9b8d2d6" title="Execute Timer-based Services.">CblTmrEvent()</a></li>
 </ul>
-<p>The initialisation functions of the CANopen FD Bootloader stack have to be executed prior to any other API functions.</p>
+<p>The initialization functions of the CANopen FD Bootloader stack have to be executed prior to any other API functions.</p>
 <h1>Starting in Classical CANopen mode</h1>
 <div class="fragment"><div class="line"><span class="keywordtype">void</span> MyCblInit(<span class="keywordtype">void</span>)</div>
 <div class="line">{</div>
 <div class="line">   <span class="comment">//----------------------------------------------------------------</span></div>
-<div class="line">   <span class="comment">// Initialise the CANopen Bootloader stack</span></div>
+<div class="line">   <span class="comment">// Initialize the CANopen Bootloader stack</span></div>
 <div class="line">   <span class="comment">//</span></div>
 <div class="line">   <a class="code hl_function" href="cbl__mgr_8h.html#a967ae5e24c6d4b2679ed83f0d8f2ebf0">CblMgrInit</a>(<a class="code hl_enumvalue" href="canpie_8h.html#a364ad643291389f2be3c52e7e0d5f0bfa6339424fe05aa422027f98daa81a5cce">eCP_CHANNEL_1</a>, 0);</div>
 <div class="line"> </div>
@@ -145,7 +145,7 @@ $(document).ready(function(){initNavTree('cbl_example_start.html',''); initResiz
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer"><a href="https://www.microcontrol.net">&copy; MicroControl GmbH &amp; Co. KG</a> Fri Jul 28 2023 </li>
+    <li class="footer"><a href="https://www.microcontrol.net">&copy; MicroControl GmbH &amp; Co. KG</a> Tue Aug 1 2023 </li>
   </ul>
 </div>
 </body>

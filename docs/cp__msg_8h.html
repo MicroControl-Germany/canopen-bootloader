@@ -42,7 +42,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectbrief">CANopen (FD) Bootloader Documentation</div>
-   <div id="projectnumber">Version 4.08.00</div>
+   <div id="projectnumber">Version 4.08.02</div>
   </td>
  </tr>
  </tbody>
@@ -114,28 +114,34 @@ $(document).ready(function(){initNavTree('cp__msg_8h.html',''); initResizable();
 <div class="textblock"><p>In order to create small and fast code, CANpie supplies a set of macros to access the CAN message structure (CpCanMsg_ts). These macros can be used instead of the functions defined in the <a class="el" href="cp__msg_8h.html" title="CANpie message access">cp_msg.h</a> header file. However keep in mind that macros can't be used to check for value ranges or parameter consistency. Usage of macros is enabled via the symbol <a class="el" href="group__CP__CONF.html#ga011470ecb8be400f09f4c13bd8aba477">CP_CAN_MSG_MACRO</a>.</p>
 <p><b>Example</b> </p><div class="fragment"><div class="line"><span class="comment">//--- setup a CAN message ----------------------------------------</span></div>
 <div class="line"><a class="code hl_struct" href="structCpCanMsg__s.html">CpCanMsg_ts</a>   myMessage;</div>
-<div class="line">CpMsgInit(&amp;myMessage, <a class="code hl_define" href="group__CP__MSG__CTRL.html#ga048baffc0f9875ee387bf4ad151d1f34">CP_MSG_FORMAT_CBFF</a>);   <span class="comment">// initialise message</span></div>
-<div class="line">CpMsgSetIdentifier(&amp;myMessage, 100);         <span class="comment">// identifier is 100 dec.</span></div>
-<div class="line">CpMsgSetDlc(&amp;myMessage, 2);                  <span class="comment">// data length code is 2</span></div>
-<div class="line">CpMsgSetData(&amp;myMessage, 0, 0x11);           <span class="comment">// byte 0 has the value 0x11</span></div>
-<div class="line">CpMsgSetData(&amp;myMessage, 1, 0x22);           <span class="comment">// byte 1 has the value 0x22</span></div>
+<div class="line"><a class="code hl_function" href="cp__msg_8h.html#a26324d9c511e7ee8815f86aa6dbe3d07">CpMsgInit</a>(&amp;myMessage, <a class="code hl_define" href="group__CP__MSG__CTRL.html#ga048baffc0f9875ee387bf4ad151d1f34">CP_MSG_FORMAT_CBFF</a>);   <span class="comment">// initialise message</span></div>
+<div class="line"><a class="code hl_function" href="cp__msg_8h.html#a8be6e1c686419b01dc45e37d3fbe7240">CpMsgSetIdentifier</a>(&amp;myMessage, 100);         <span class="comment">// identifier is 100 dec.</span></div>
+<div class="line"><a class="code hl_function" href="cp__msg_8h.html#a00f6effd43d79424be91b3e49f1cc430">CpMsgSetDlc</a>(&amp;myMessage, 2);                  <span class="comment">// data length code is 2</span></div>
+<div class="line"><a class="code hl_function" href="cp__msg_8h.html#a80ec81d66704cf734cfc5ffc157449d7">CpMsgSetData</a>(&amp;myMessage, 0, 0x11);           <span class="comment">// byte 0 has the value 0x11</span></div>
+<div class="line"><a class="code hl_function" href="cp__msg_8h.html#a80ec81d66704cf734cfc5ffc157449d7">CpMsgSetData</a>(&amp;myMessage, 1, 0x22);           <span class="comment">// byte 1 has the value 0x22</span></div>
 <div class="line"><span class="comment">//... do something with it ....</span></div>
 <div class="line"> </div>
 <div class="line"><span class="comment">//--- evaluate a message that was received -----------------------</span></div>
 <div class="line"><a class="code hl_struct" href="structCpCanMsg__s.html">CpCanMsg_ts</a>   receiveMsg;</div>
 <div class="line"><span class="comment">//... receive the stuff ....</span></div>
 <div class="line"> </div>
-<div class="line"><span class="keywordflow">if</span>(CpMsgIsExtended(&amp;receiveMsg))</div>
+<div class="line"><span class="keywordflow">if</span>(<a class="code hl_function" href="cp__msg_8h.html#af36342954da6c555a2c1137521d9481b">CpMsgIsExtended</a>(&amp;receiveMsg))</div>
 <div class="line">{</div>
 <div class="line">   <span class="comment">//--- this is an Extended Frame ---------------------</span></div>
 <div class="line">   DoExtendedMessageService();</div>
 <div class="line">   <span class="keywordflow">return</span>;</div>
 <div class="line">}</div>
 <div class="line"> </div>
-<div class="line"><span class="keywordflow">if</span>(CpMsgIsRemote(&amp;receiveMsg))</div>
+<div class="line"><span class="keywordflow">if</span>(<a class="code hl_function" href="cp__msg_8h.html#a65732a5345415c8f980efbe0e7efff18">CpMsgIsRemote</a>(&amp;receiveMsg))</div>
 <div class="line">{</div>
 <div class="line">   <span class="comment">//... do something with RTR frames</span></div>
 <div class="line">}</div>
+<div class="ttc" id="acp__msg_8h_html_a00f6effd43d79424be91b3e49f1cc430"><div class="ttname"><a href="cp__msg_8h.html#a00f6effd43d79424be91b3e49f1cc430">CpMsgSetDlc</a></div><div class="ttdeci">void CpMsgSetDlc(CpCanMsg_ts *ptsCanMsgV, uint8_t ubDlcV)</div><div class="ttdoc">Set Data Length Code.</div></div>
+<div class="ttc" id="acp__msg_8h_html_a26324d9c511e7ee8815f86aa6dbe3d07"><div class="ttname"><a href="cp__msg_8h.html#a26324d9c511e7ee8815f86aa6dbe3d07">CpMsgInit</a></div><div class="ttdeci">void CpMsgInit(CpCanMsg_ts *ptsCanMsgV, uint8_t ubFormatV)</div><div class="ttdoc">Initialise message structure.</div></div>
+<div class="ttc" id="acp__msg_8h_html_a65732a5345415c8f980efbe0e7efff18"><div class="ttname"><a href="cp__msg_8h.html#a65732a5345415c8f980efbe0e7efff18">CpMsgIsRemote</a></div><div class="ttdeci">bool_t CpMsgIsRemote(const CpCanMsg_ts *ptsCanMsgV)</div><div class="ttdoc">Check for remote frame.</div></div>
+<div class="ttc" id="acp__msg_8h_html_a80ec81d66704cf734cfc5ffc157449d7"><div class="ttname"><a href="cp__msg_8h.html#a80ec81d66704cf734cfc5ffc157449d7">CpMsgSetData</a></div><div class="ttdeci">void CpMsgSetData(CpCanMsg_ts *ptsCanMsgV, uint8_t ubPosV, uint8_t ubValueV)</div><div class="ttdoc">Set Data.</div></div>
+<div class="ttc" id="acp__msg_8h_html_a8be6e1c686419b01dc45e37d3fbe7240"><div class="ttname"><a href="cp__msg_8h.html#a8be6e1c686419b01dc45e37d3fbe7240">CpMsgSetIdentifier</a></div><div class="ttdeci">void CpMsgSetIdentifier(CpCanMsg_ts *ptsCanMsgV, uint32_t ulIdentifierV)</div><div class="ttdoc">Set Identifier Value.</div></div>
+<div class="ttc" id="acp__msg_8h_html_af36342954da6c555a2c1137521d9481b"><div class="ttname"><a href="cp__msg_8h.html#af36342954da6c555a2c1137521d9481b">CpMsgIsExtended</a></div><div class="ttdeci">bool_t CpMsgIsExtended(const CpCanMsg_ts *ptsCanMsgV)</div><div class="ttdoc">Check for Extended CAN frame.</div></div>
 <div class="ttc" id="agroup__CP__MSG__CTRL_html_ga048baffc0f9875ee387bf4ad151d1f34"><div class="ttname"><a href="group__CP__MSG__CTRL.html#ga048baffc0f9875ee387bf4ad151d1f34">CP_MSG_FORMAT_CBFF</a></div><div class="ttdeci">#define CP_MSG_FORMAT_CBFF</div><div class="ttdef"><b>Definition:</b> canpie.h:415</div></div>
 <div class="ttc" id="astructCpCanMsg__s_html"><div class="ttname"><a href="structCpCanMsg__s.html">CpCanMsg_s</a></div><div class="ttdoc">CAN message structure.</div><div class="ttdef"><b>Definition:</b> canpie.h:1005</div></div>
 </div><!-- fragment --> </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -249,7 +255,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <p>This function sets the identifier field and the flags field of a CAN message structure to 0. It is recommended to use this function when a message structure is assigned in memory.</p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000001">Deprecated:</a></b></dt><dd>It is advised to use CpMsgInit() for new applications.</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000001">Deprecated:</a></b></dt><dd>It is advised to use <a class="el" href="cp__msg_8h.html#a26324d9c511e7ee8815f86aa6dbe3d07" title="Initialise message structure.">CpMsgInit()</a> for new applications.</dd></dl>
 
 </div>
 </div>
@@ -276,7 +282,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd>CpMsgSetOverrun()</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="cp__msg_8h.html#a5d197759d9d9deabdca599b51ed5d451" title="Set Overrun bit.">CpMsgSetOverrun()</a></dd></dl>
 <p>This function clears the Overrun bit (RTR). </p>
 
 </div>
@@ -304,7 +310,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd>CpMsgSetRemote()</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="cp__msg_8h.html#ae5e952245b9e8efef42cff7cd2e8b874" title="Set RTR bit.">CpMsgSetRemote()</a></dd></dl>
 <p>This function clears the Remote Transmission bit (RTR). </p>
 
 </div>
@@ -429,9 +435,9 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Extended Identifier value </dd></dl>
-<dl class="section see"><dt>See also</dt><dd>CpMsgGetStdId()</dd></dl>
-<p>This function retrieves the value for the identifier of an extended frame (CAN 2.0B). The frame format of the CAN message can be tested with the CpMsgIsExtended() function.</p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000002">Deprecated:</a></b></dt><dd>It is advised to use CpMsgGetIdentifier() for new applications.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="cp__msg_8h.html#a9d93471ce3b3d2ffe170868d889fe3f3" title="Get 11 Bit Identifier Value.">CpMsgGetStdId()</a></dd></dl>
+<p>This function retrieves the value for the identifier of an extended frame (CAN 2.0B). The frame format of the CAN message can be tested with the <a class="el" href="cp__msg_8h.html#af36342954da6c555a2c1137521d9481b" title="Check for Extended CAN frame.">CpMsgIsExtended()</a> function.</p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000002">Deprecated:</a></b></dt><dd>It is advised to use <a class="el" href="cp__msg_8h.html#ade1383c687076fd3c034a43fe30d71a7" title="Get Identifier Value.">CpMsgGetIdentifier()</a> for new applications.</dd></dl>
 
 </div>
 </div>
@@ -459,8 +465,8 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Identifier value </dd></dl>
-<dl class="section see"><dt>See also</dt><dd>CpMsgSetIdentifier()</dd></dl>
-<p>This function retrieves the value for the identifier of a CAN frame. The frame format of the CAN message can be tested with the CpMsgIsExtended() function. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="cp__msg_8h.html#a8be6e1c686419b01dc45e37d3fbe7240" title="Set Identifier Value.">CpMsgSetIdentifier()</a></dd></dl>
+<p>This function retrieves the value for the identifier of a CAN frame. The frame format of the CAN message can be tested with the <a class="el" href="cp__msg_8h.html#af36342954da6c555a2c1137521d9481b" title="Check for Extended CAN frame.">CpMsgIsExtended()</a> function. </p>
 
 </div>
 </div>
@@ -488,9 +494,9 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Standard Identifier value </dd></dl>
-<dl class="section see"><dt>See also</dt><dd>CpMsgGetExtId()</dd></dl>
-<p>This macro retrieves the value for the identifier of an standard frame (CAN 2.0A). The frame format of the CAN message can be tested with the CpMsgIsExtended() function.</p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000003">Deprecated:</a></b></dt><dd>It is advised to use CpMsgGetIdentifier() for new applications.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="cp__msg_8h.html#aa2be7146d7d9e58a379c5457bcc551f9" title="Get 29 Bit Identifier Value.">CpMsgGetExtId()</a></dd></dl>
+<p>This macro retrieves the value for the identifier of an standard frame (CAN 2.0A). The frame format of the CAN message can be tested with the <a class="el" href="cp__msg_8h.html#af36342954da6c555a2c1137521d9481b" title="Check for Extended CAN frame.">CpMsgIsExtended()</a> function.</p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000003">Deprecated:</a></b></dt><dd>It is advised to use <a class="el" href="cp__msg_8h.html#ade1383c687076fd3c034a43fe30d71a7" title="Get Identifier Value.">CpMsgGetIdentifier()</a> for new applications.</dd></dl>
 
 </div>
 </div>
@@ -518,7 +524,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to time-stamp structure </dd></dl>
-<dl class="section see"><dt>See also</dt><dd>CpMsgSetTime</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="cp__msg_8h.html#a3908a4d4e38cf707639393d8cf6b5931" title="Set time-stamp value.">CpMsgSetTime</a></dd></dl>
 <p>This function returns the time-stamp value for a CAN frame. </p>
 
 </div>
@@ -591,7 +597,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><code>true</code> if bit-rate switch is set </dd></dl>
-<dl class="section see"><dt>See also</dt><dd>CpMsgSetBitrateSwitch()</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="cp__msg_8h.html#aa7be2f9dde074929632d4649b486c3c8" title="Set bit-rate switch.">CpMsgSetBitrateSwitch()</a></dd></dl>
 <p>This function checks the frame type. If the frame is a CAN FD frame and the bit-rate switch (BRS) bit is set, the value <code>true</code> is returned. </p>
 
 </div>
@@ -1076,9 +1082,9 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd>CpMsgSetStdId()</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="cp__msg_8h.html#ae77d572ec31801181a76b53efc742f0e" title="Set 11 Bit Identifier Value.">CpMsgSetStdId()</a></dd></dl>
 <p>This function sets the identifier value for an Extended Frame (CAN 2.0B) and marks the frame format as accordingly. The value of <code>ulExtIdV</code> is limited to <a class="el" href="group__CP__MASK.html#gac383aefe7f5d11387ae1c77a9aaa5acf">CP_MASK_EXT_FRAME</a>.</p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000004">Deprecated:</a></b></dt><dd>It is advised to use CpMsgSetIdentifier() for new applications. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000004">Deprecated:</a></b></dt><dd>It is advised to use <a class="el" href="cp__msg_8h.html#a8be6e1c686419b01dc45e37d3fbe7240" title="Set Identifier Value.">CpMsgSetIdentifier()</a> for new applications. </dd></dl>
 
 </div>
 </div>
@@ -1116,7 +1122,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd>CpMsgGetIdentifier()</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="cp__msg_8h.html#ade1383c687076fd3c034a43fe30d71a7" title="Get Identifier Value.">CpMsgGetIdentifier()</a></dd></dl>
 <p>This function sets the identifier value for a CAN frame. The parameter <code>ulIdentifierV</code> is truncated to a 11-bit value (AND operation with <a class="el" href="group__CP__MASK.html#gada1cad88f6070db2ce1c15502af60b8f">CP_MASK_STD_FRAME</a>) when the message uses base frame format. The parameter <code>ulIdentifierV</code> is truncated to a 29-bit value (AND operation with <a class="el" href="group__CP__MASK.html#gac383aefe7f5d11387ae1c77a9aaa5acf">CP_MASK_EXT_FRAME</a>) when the message uses extended frame format. </p>
 
 </div>
@@ -1144,7 +1150,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd>CpMsgClrOverrun()</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="cp__msg_8h.html#a86e7f568467e72ac016dfe56c13d7465" title="Clear Overrun bit.">CpMsgClrOverrun()</a></dd></dl>
 <p>This function sets the Overrun bit. </p>
 
 </div>
@@ -1172,7 +1178,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd>CpMsgClrRemote()</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="cp__msg_8h.html#a11b356c7415355cbe4cfd5e9fc5dceba" title="Clear RTR bit.">CpMsgClrRemote()</a></dd></dl>
 <p>This function sets the Remote Transmission bit (RTR). </p>
 
 </div>
@@ -1213,7 +1219,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section see"><dt>See also</dt><dd>CpMsgSetExtFrame()</dd></dl>
 <p>This function sets the identifier value for a Standard frame (CAN 2.0A). The value of <code>uwStdIdV</code> is limited to <a class="el" href="group__CP__MASK.html#gada1cad88f6070db2ce1c15502af60b8f">CP_MASK_STD_FRAME</a>.</p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000005">Deprecated:</a></b></dt><dd>It is advised to use CpMsgSetIdentifier() for new applications. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000005">Deprecated:</a></b></dt><dd>It is advised to use <a class="el" href="cp__msg_8h.html#a8be6e1c686419b01dc45e37d3fbe7240" title="Set Identifier Value.">CpMsgSetIdentifier()</a> for new applications. </dd></dl>
 
 </div>
 </div>
@@ -1291,7 +1297,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_b2f33c71d4aa5e7af42a1ca61ff5af1b.html">source</a></li><li class="navelem"><a class="el" href="dir_5621f0c32b973146c7a32c8fe78d1bfb.html">canpie-fd</a></li><li class="navelem"><a class="el" href="cp__msg_8h.html">cp_msg.h</a></li>
-    <li class="footer"><a href="https://www.microcontrol.net">&copy; MicroControl GmbH &amp; Co. KG</a> Fri Jul 28 2023 </li>
+    <li class="footer"><a href="https://www.microcontrol.net">&copy; MicroControl GmbH &amp; Co. KG</a> Tue Aug 1 2023 </li>
   </ul>
 </div>
 </body>

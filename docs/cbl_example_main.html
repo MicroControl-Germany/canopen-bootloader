@@ -42,7 +42,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectbrief">CANopen (FD) Bootloader Documentation</div>
-   <div id="projectnumber">Version 4.08.00</div>
+   <div id="projectnumber">Version 4.08.02</div>
   </td>
  </tr>
  </tbody>
@@ -194,34 +194,34 @@ $(document).ready(function(){initNavTree('cbl_example_main.html',''); initResiza
 <div class="line"> </div>
 <div class="line"> </div>
 <div class="line">   <span class="comment">//---------------------------------------------------------------------------------------------------</span></div>
-<div class="line">   <span class="comment">// Initialise the target CPU</span></div>
+<div class="line">   <span class="comment">// Initialize the target CPU</span></div>
 <div class="line">   <span class="comment">//</span></div>
 <div class="line">   <a class="code hl_function" href="mc__cpu_8h.html#a68af113e5b7369e6a62c00a7d71b19df">McCpuInit</a>();</div>
 <div class="line"> </div>
 <div class="line"> </div>
 <div class="line">   <span class="comment">//---------------------------------------------------------------------------------------------------</span></div>
-<div class="line">   <span class="comment">// Initialise the timer resource on the target CPU</span></div>
+<div class="line">   <span class="comment">// Initialize the timer resource on the target CPU</span></div>
 <div class="line">   <span class="comment">//</span></div>
 <div class="line">   <a class="code hl_function" href="mc__tmr_8h.html#a5d9fcb12b6dfba74126dc1d6cd9c4a24">McTmrInit</a>();</div>
 <div class="line"> </div>
 <div class="line">   <span class="comment">//---------------------------------------------------------------------------------------------------</span></div>
-<div class="line">   <span class="comment">// Initialise flash driver</span></div>
+<div class="line">   <span class="comment">// Initialize flash driver</span></div>
 <div class="line">   <span class="comment">//</span></div>
 <div class="line">   <a class="code hl_function" href="mc__flash_8h.html#a27af03cd0d10d2a13bdf781816172fba">McFlashInit</a>();</div>
 <div class="line"> </div>
 <div class="line">   <span class="comment">//---------------------------------------------------------------------------------------------------</span></div>
-<div class="line">   <span class="comment">// Initialise the CANopen Bootloader demo application, this is individual for every target</span></div>
+<div class="line">   <span class="comment">// Initialize the CANopen Bootloader demo application, this is individual for every target</span></div>
 <div class="line">   <span class="comment">//</span></div>
 <div class="line">   CblDemoAppInit();</div>
 <div class="line"> </div>
 <div class="line">   <span class="comment">//---------------------------------------------------------------------------------------------------</span></div>
-<div class="line">   <span class="comment">// Initialise the CANopen bootloader</span></div>
+<div class="line">   <span class="comment">// Initialize the CANopen bootloader</span></div>
 <div class="line">   <span class="comment">//</span></div>
 <div class="line">   <a class="code hl_function" href="cbl__mgr_8h.html#a967ae5e24c6d4b2679ed83f0d8f2ebf0">CblMgrInit</a>(TMPL_CBL_USE_CAN_IF, TMPL_CBL_CONFIG);</div>
 <div class="line"> </div>
 <div class="line">   <span class="comment">//---------------------------------------------------------------------------------------------------</span></div>
 <div class="line">   <span class="comment">// Try to jump to application. This has to be made after calling CblMgrInit(), because several </span></div>
-<div class="line">   <span class="comment">// global variables are initialised in the CblMgrInit() call.</span></div>
+<div class="line">   <span class="comment">// global variables are initialized in the CblMgrInit() call.</span></div>
 <div class="line">   <span class="comment">//</span></div>
 <div class="line">   <span class="comment">// We check if the application is valid and the boot-lock is disabled.</span></div>
 <div class="line">   <span class="comment">//</span></div>
@@ -337,7 +337,7 @@ $(document).ready(function(){initNavTree('cbl_example_main.html',''); initResiza
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer"><a href="https://www.microcontrol.net">&copy; MicroControl GmbH &amp; Co. KG</a> Fri Jul 28 2023 </li>
+    <li class="footer"><a href="https://www.microcontrol.net">&copy; MicroControl GmbH &amp; Co. KG</a> Tue Aug 1 2023 </li>
   </ul>
 </div>
 </body>

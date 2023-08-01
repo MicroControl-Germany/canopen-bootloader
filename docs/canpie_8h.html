@@ -42,7 +42,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectbrief">CANopen (FD) Bootloader Documentation</div>
-   <div id="projectnumber">Version 4.08.00</div>
+   <div id="projectnumber">Version 4.08.02</div>
   </td>
  </tr>
  </tbody>
@@ -165,7 +165,7 @@ Macros</h2></td></tr>
 <tr class="separator:gafaf3d19d77824206f3fbe55a2429e7f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gabeb013be76eac51ab86c00a0fc372eab"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CP__CONF.html#gabeb013be76eac51ab86c00a0fc372eab">CP_CAN_FD</a>&#160;&#160;&#160;0</td></tr>
 <tr class="separator:gabeb013be76eac51ab86c00a0fc372eab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga011470ecb8be400f09f4c13bd8aba477"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CP__CONF.html#ga011470ecb8be400f09f4c13bd8aba477">CP_CAN_MSG_MACRO</a>&#160;&#160;&#160;1</td></tr>
+<tr class="memitem:ga011470ecb8be400f09f4c13bd8aba477"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CP__CONF.html#ga011470ecb8be400f09f4c13bd8aba477">CP_CAN_MSG_MACRO</a>&#160;&#160;&#160;0</td></tr>
 <tr class="separator:ga011470ecb8be400f09f4c13bd8aba477"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga756193e174c067f620390bc47ff42574"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CP__CONF.html#ga756193e174c067f620390bc47ff42574">CP_CAN_MSG_MARKER</a>&#160;&#160;&#160;0</td></tr>
 <tr class="separator:ga756193e174c067f620390bc47ff42574"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -580,7 +580,7 @@ Enumerations</h2></td></tr>
 <p><b>Example</b> </p><div class="fragment"><div class="line">uint8_t MyCallback(<a class="code hl_struct" href="structCpCanMsg__s.html">CpCanMsg_ts</a> * ptsCanMsgV, uint8_t ubBufferIdxV)</div>
 <div class="line">{</div>
 <div class="line">   <span class="comment">// Do something with IDs &lt; 100</span></div>
-<div class="line">   <span class="keywordflow">if</span>( CpMsgGetIdentifier(ptsCanMsgV) &lt; 100)</div>
+<div class="line">   <span class="keywordflow">if</span>( <a class="code hl_function" href="cp__msg_8h.html#ade1383c687076fd3c034a43fe30d71a7">CpMsgGetIdentifier</a>(ptsCanMsgV) &lt; 100)</div>
 <div class="line">   {</div>
 <div class="line">      <span class="comment">//.....</span></div>
 <div class="line">      <span class="keywordflow">return</span>(<a class="code hl_enumvalue" href="canpie_8h.html#a7891705c91cde48c26c7d1aafefc2790a7fe178bab816d830d71a699e5f3bb912">eCP_CALLBACK_PROCESSED</a>)</div>
@@ -591,6 +591,7 @@ Enumerations</h2></td></tr>
 <div class="line">}</div>
 <div class="ttc" id="acanpie_8h_html_a7891705c91cde48c26c7d1aafefc2790a7fe178bab816d830d71a699e5f3bb912"><div class="ttname"><a href="canpie_8h.html#a7891705c91cde48c26c7d1aafefc2790a7fe178bab816d830d71a699e5f3bb912">eCP_CALLBACK_PROCESSED</a></div><div class="ttdeci">@ eCP_CALLBACK_PROCESSED</div><div class="ttdef"><b>Definition:</b> canpie.h:619</div></div>
 <div class="ttc" id="acanpie_8h_html_a7891705c91cde48c26c7d1aafefc2790ac6edae190f4075ecaa9a61a9ea49a02f"><div class="ttname"><a href="canpie_8h.html#a7891705c91cde48c26c7d1aafefc2790ac6edae190f4075ecaa9a61a9ea49a02f">eCP_CALLBACK_PUSH_FIFO</a></div><div class="ttdeci">@ eCP_CALLBACK_PUSH_FIFO</div><div class="ttdef"><b>Definition:</b> canpie.h:624</div></div>
+<div class="ttc" id="acp__msg_8h_html_ade1383c687076fd3c034a43fe30d71a7"><div class="ttname"><a href="cp__msg_8h.html#ade1383c687076fd3c034a43fe30d71a7">CpMsgGetIdentifier</a></div><div class="ttdeci">uint32_t CpMsgGetIdentifier(const CpCanMsg_ts *ptsCanMsgV)</div><div class="ttdoc">Get Identifier Value.</div></div>
 <div class="ttc" id="astructCpCanMsg__s_html"><div class="ttname"><a href="structCpCanMsg__s.html">CpCanMsg_s</a></div><div class="ttdoc">CAN message structure.</div><div class="ttdef"><b>Definition:</b> canpie.h:1005</div></div>
 </div><!-- fragment --><p> <br  />
  </p>
@@ -861,7 +862,7 @@ Enumerations</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_b2f33c71d4aa5e7af42a1ca61ff5af1b.html">source</a></li><li class="navelem"><a class="el" href="dir_5621f0c32b973146c7a32c8fe78d1bfb.html">canpie-fd</a></li><li class="navelem"><a class="el" href="canpie_8h.html">canpie.h</a></li>
-    <li class="footer"><a href="https://www.microcontrol.net">&copy; MicroControl GmbH &amp; Co. KG</a> Fri Jul 28 2023 </li>
+    <li class="footer"><a href="https://www.microcontrol.net">&copy; MicroControl GmbH &amp; Co. KG</a> Tue Aug 1 2023 </li>
   </ul>
 </div>
 </body>
