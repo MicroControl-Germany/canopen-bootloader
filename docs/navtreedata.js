@@ -24,7 +24,7 @@
 */
 var NAVTREE =
 [
-  [ "CANopen (FD) Bootloader Protocol Stack", "index.html", [
+  [ "CANopen Bootloader Protocol Stack", "index.html", [
     [ "Getting Started", null, [
       [ "First steps", "cbl_getting_started.html", null ],
       [ "Protocol Stack Overview", "cbl_api_overview.html", null ],

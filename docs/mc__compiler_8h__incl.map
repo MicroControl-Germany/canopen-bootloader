@@ -1,6 +1,9 @@
 <map id="mc_compiler.h" name="mc_compiler.h">
-<area shape="rect" id="node1" title="Definition of compiler independent data types ." alt="" coords="146,5,253,31"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,79,137,104"/>
-<area shape="rect" id="node3" title=" " alt="" coords="162,79,237,104"/>
-<area shape="rect" id="node4" title=" " alt="" coords="261,79,327,104"/>
+<area shape="rect" id="Node000001" title="Definition of compiler independent data types ." alt="" coords="145,5,250,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,79,137,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="177,34,107,73,104,69,175,29"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="161,79,235,105"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="200,31,200,63,195,63,195,31"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="259,79,323,105"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="215,29,265,67,262,72,212,34"/>
 </map>

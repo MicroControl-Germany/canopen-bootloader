@@ -1,9 +1,15 @@
 <map id="cp_fifo.h" name="cp_fifo.h">
-<area shape="rect" id="node1" title="CANpie FIFO functions ." alt="" coords="227,5,299,31"/>
-<area shape="rect" id="node2" href="$canpie_8h.html" title="CANpie constants, structures and enumerations" alt="" coords="228,79,299,104"/>
-<area shape="rect" id="node3" href="$mc__compiler_8h.html" title="Definition of compiler independent data types ." alt="" coords="146,152,253,177"/>
-<area shape="rect" id="node7" title=" " alt="" coords="277,152,378,177"/>
-<area shape="rect" id="node4" title=" " alt="" coords="5,225,137,251"/>
-<area shape="rect" id="node5" title=" " alt="" coords="162,225,237,251"/>
-<area shape="rect" id="node6" title=" " alt="" coords="261,225,327,251"/>
+<area shape="rect" id="Node000001" title="CANpie FIFO functions ." alt="" coords="225,5,296,31"/>
+<area shape="rect" id="Node000002" href="$canpie_8h.html" title="CANpie constants, structures and enumerations" alt="" coords="225,79,296,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="263,31,263,63,258,63,258,31"/>
+<area shape="rect" id="Node000003" href="$mc__compiler_8h.html" title="Definition of compiler independent data types ." alt="" coords="145,153,250,178"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="252,107,220,142,216,139,248,103"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="274,153,375,178"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="273,103,306,139,302,143,269,107"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,226,137,252"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="177,181,107,221,104,216,175,177"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="161,226,235,252"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="200,179,200,211,195,211,195,179"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="259,226,323,252"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="215,177,265,215,262,219,212,181"/>
 </map>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['_25canpie_20fd_20configuration_20options_0',['%CANpie FD configuration options',['../group__CP__CONF.html',1,'']]]
+  ['bit_20mask_20for_20message_20control_0',['Bit mask for message control',['../group__CP__MSG__CTRL.html',1,'']]]
 ];

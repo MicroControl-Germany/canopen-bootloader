@@ -1,8 +1,13 @@
 <map id="canpie.h" name="canpie.h">
-<area shape="rect" id="node1" title="CANpie constants, structures and enumerations" alt="" coords="228,5,299,31"/>
-<area shape="rect" id="node2" href="$mc__compiler_8h.html" title="Definition of compiler independent data types ." alt="" coords="146,79,253,104"/>
-<area shape="rect" id="node6" title=" " alt="" coords="277,79,378,104"/>
-<area shape="rect" id="node3" title=" " alt="" coords="5,152,137,177"/>
-<area shape="rect" id="node4" title=" " alt="" coords="162,152,237,177"/>
-<area shape="rect" id="node5" title=" " alt="" coords="261,152,327,177"/>
+<area shape="rect" id="Node000001" title="CANpie constants, structures and enumerations" alt="" coords="225,5,296,31"/>
+<area shape="rect" id="Node000002" href="$mc__compiler_8h.html" title="Definition of compiler independent data types ." alt="" coords="145,79,250,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="252,33,220,69,216,65,248,29"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="274,79,375,105"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="273,29,306,66,302,69,269,33"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,153,137,178"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="177,108,107,147,104,142,175,103"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="161,153,235,178"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="200,105,200,137,195,137,195,105"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="259,153,323,178"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="215,103,265,141,262,145,212,107"/>
 </map>

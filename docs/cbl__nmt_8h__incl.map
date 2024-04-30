@@ -1,15 +1,29 @@
 <map id="cbl_nmt.h" name="cbl_nmt.h">
-<area shape="rect" id="node1" title="CANopen Bootloader Network Management functions ." alt="" coords="127,5,206,31"/>
-<area shape="rect" id="node2" href="$cbl__defs_8h.html" title="CANopen Bootloader definitions ." alt="" coords="125,79,208,104"/>
-<area shape="rect" id="node3" href="$cp__core_8h.html" title="CANpie core functions ." alt="" coords="14,152,93,177"/>
-<area shape="rect" id="node11" href="$cp__msg_8h.html" title="CANpie message access" alt="" coords="102,225,181,251"/>
-<area shape="rect" id="node12" href="$canopen_8h.html" title="General CANopen definitions ." alt="" coords="205,225,288,251"/>
-<area shape="rect" id="node13" href="$cbl__conf_8h.html" title="CANopen Bootloader configuration ." alt="" coords="229,152,312,177"/>
-<area shape="rect" id="node4" href="$cp__fifo_8h.html" title="CANpie FIFO functions ." alt="" coords="5,225,77,251"/>
-<area shape="rect" id="node5" href="$canpie_8h.html" title="CANpie constants, structures and enumerations" alt="" coords="94,299,165,324"/>
-<area shape="rect" id="node6" href="$mc__compiler_8h.html" title="Definition of compiler independent data types ." alt="" coords="193,372,300,397"/>
-<area shape="rect" id="node10" title=" " alt="" coords="68,372,169,397"/>
-<area shape="rect" id="node7" title=" " alt="" coords="53,445,185,471"/>
-<area shape="rect" id="node8" title=" " alt="" coords="209,445,284,471"/>
-<area shape="rect" id="node9" title=" " alt="" coords="309,445,374,471"/>
+<area shape="rect" id="Node000001" title="CANopen Bootloader Network Management functions ." alt="" coords="126,5,204,31"/>
+<area shape="rect" id="Node000002" href="$cbl__defs_8h.html" title="CANopen Bootloader definitions ." alt="" coords="124,79,206,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="168,31,168,63,162,63,162,31"/>
+<area shape="rect" id="Node000003" href="$cp__core_8h.html" title="CANpie core functions ." alt="" coords="14,153,92,178"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="147,107,86,146,83,142,145,103"/>
+<area shape="rect" id="Node000011" href="$cp__msg_8h.html" title="CANpie message access" alt="" coords="101,226,179,252"/>
+<area shape="poly" id="edge10_Node000002_Node000011" title=" " alt="" coords="166,105,147,211,142,210,160,105"/>
+<area shape="rect" id="Node000012" href="$canopen_8h.html" title="General CANopen definitions ." alt="" coords="203,226,284,252"/>
+<area shape="poly" id="edge12_Node000002_Node000012" title=" " alt="" coords="174,104,232,211,228,214,169,106"/>
+<area shape="rect" id="Node000013" href="$cbl__conf_8h.html" title="CANopen Bootloader configuration ." alt="" coords="228,153,310,178"/>
+<area shape="poly" id="edge14_Node000002_Node000013" title=" " alt="" coords="184,103,240,141,237,146,181,107"/>
+<area shape="rect" id="Node000004" href="$cp__fifo_8h.html" title="CANpie FIFO functions ." alt="" coords="5,226,77,252"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="54,179,48,211,43,210,48,178"/>
+<area shape="rect" id="Node000005" href="$canpie_8h.html" title="CANpie constants, structures and enumerations" alt="" coords="93,300,163,326"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="57,250,103,288,100,292,54,255"/>
+<area shape="rect" id="Node000006" href="$mc__compiler_8h.html" title="Definition of compiler independent data types ." alt="" coords="191,374,296,399"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="149,324,213,363,210,368,146,328"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="67,374,167,399"/>
+<area shape="poly" id="edge9_Node000005_Node000010" title=" " alt="" coords="129,326,124,359,118,358,123,325"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="51,447,183,473"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="223,402,153,442,150,437,221,398"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="207,447,281,473"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="246,400,246,432,241,432,241,400"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="305,447,369,473"/>
+<area shape="poly" id="edge8_Node000006_Node000009" title=" " alt="" coords="261,398,311,436,308,440,258,402"/>
+<area shape="poly" id="edge11_Node000011_Node000005" title=" " alt="" coords="140,253,135,285,130,284,135,252"/>
+<area shape="poly" id="edge13_Node000012_Node000006" title=" " alt="" coords="246,252,246,358,241,358,241,252"/>
 </map>
